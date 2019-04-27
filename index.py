@@ -2,7 +2,7 @@ list = [12,4,56,34,56,896,-34]
 min1=list[0]
 min2=list[0]
 min3=list[0]
-print(list)
+
 for i in range(1, len(list)):
     if list[i] < min1:
         min3 = min2
