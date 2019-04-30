@@ -1,3 +1,7 @@
+#Решение задачи из банка задачи ФИПИ
+# Текст задачи по ссылке
+# https://yadi.sk/i/wlURv0ycqDPVbA
+
 abr = input()
 n = int(input())
 
@@ -25,9 +29,9 @@ for i in range(n):
 k = len(nums_search)
 for i in range(k - 1):
     for j in range(k - i - 1):
-        if nums_search[i] < nums_search[i + 1]:
-            nums_search[i], nums_search[i + 1] = nums_search[i + 1], nums_search[i]
-            search_list[i], search_list[i + 1] = search_list[i + 1], search_list[i]
+        if nums_search[j] < nums_search[j + 1]:
+            nums_search[j], nums_search[j + 1] = nums_search[j + 1], nums_search[j]
+            search_list[j], search_list[j + 1] = search_list[j + 1], search_list[j]
 
 
 if k < 4:
